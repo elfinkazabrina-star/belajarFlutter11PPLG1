@@ -10,12 +10,13 @@ class LoginClonePage extends StatefulWidget {
 }
 
 class _LoginClonePageState extends State<LoginClonePage> {
-  final TextEditingController txtUsername = TextEditingController();
-  final TextEditingController txtPassword = TextEditingController();
   String statusLogin = "";
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController txtUsername = TextEditingController();
+    TextEditingController txtPassword = TextEditingController();
+
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
@@ -30,7 +31,6 @@ class _LoginClonePageState extends State<LoginClonePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              
               Container(
                 width: 80,
                 height: 80,
@@ -54,14 +54,14 @@ class _LoginClonePageState extends State<LoginClonePage> {
                 ),
               ),
               const SizedBox(height: 20),
-              CustomTextField(
+              CustomTextfield(
                 txtController: txtUsername,
-                text: "input username",
+                myHint: "input username",
               ),
               const SizedBox(height: 10),
-              CustomTextField(
+              CustomTextfield(
                 txtController: txtPassword,
-                text: "input password",
+                myHint: "input password",
               ),
               const SizedBox(height: 20),
               Row(
@@ -74,8 +74,10 @@ class _LoginClonePageState extends State<LoginClonePage> {
                         String username = txtUsername.text.toString();
                         String password = txtPassword.text.toString();
                         if (username == "admin" && password == "admin") {
+                          print("sukses login");
                           statusLogin = "admin";
                         } else {
+                          print("gagal login");
                           statusLogin = "failed";
                         }
                       });
