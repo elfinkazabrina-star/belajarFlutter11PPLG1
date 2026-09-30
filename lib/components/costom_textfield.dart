@@ -15,7 +15,7 @@ class CustomTextfield extends StatelessWidget {
     return TextField(
       controller: txtController,
       style: const TextStyle(
-        color: Colors.black, // <-- Warna teks yang diketik (Hitam)
+        color: Colors.black, 
         fontSize: 16,
       ),
       decoration: InputDecoration(

@@ -31,14 +31,14 @@ class _LoginClonePageState extends State<LoginClonePage> {
           child: Column(
             children: [
               const SizedBox(height: 20),
-              // Icon Musik
+         
               const Icon(
                 Icons.music_note,
                 size: 80,
                 color: Colors.green,
               ),
               const SizedBox(height: 10),
-              // Text Welcome / Status
+             
               Text(
                 "Welcome to Spotify $statusLogin",
                 style: const TextStyle(
@@ -48,7 +48,7 @@ class _LoginClonePageState extends State<LoginClonePage> {
                 ),
               ),
               const SizedBox(height: 20),
-              // Input Username
+             
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 8),
                 child: CustomTextfield(
