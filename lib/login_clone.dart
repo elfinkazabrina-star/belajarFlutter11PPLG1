@@ -65,7 +65,7 @@ class _LoginClonePageState extends State<LoginClonePage> {
                 ),
               ),
               const SizedBox(height: 20),
-              // Tombol Login & Register
+              
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

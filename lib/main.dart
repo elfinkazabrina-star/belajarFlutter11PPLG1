@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'pages/routes.dart';
 
 void main() {
@@ -14,8 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: "My Learning App",
-      initialRoute: Routes.registration,
-      getPages: Routes.myPages, 
+      initialRoute: Routes.list_makanan, 
+      getPages: Routes.myPages,
     );
   }
 }

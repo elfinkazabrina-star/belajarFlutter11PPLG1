@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../components/costom_botton.dart';
 import '../controller/confirm_reg_controller.dart';
 
