@@ -1,18 +1,22 @@
+import 'package:my_app/pages/confirm_reg_page.dart';
+import 'package:my_app/pages/detail_makanan_page.dart';
+import 'package:my_app/pages/list_makanan_page.dart';
+import 'package:my_app/pages/main_menu_page.dart';
+import 'package:my_app/pages/registration_page.dart';
 import 'package:get/get.dart';
-import 'confirm_reg_page.dart';
-import 'list_makanan_page.dart';
-import 'registration_page.dart';
 
 class Routes {
-
   static const String registration = "/registration";
   static const String confirm_registration = "/confirm_registration";
   static const String list_makanan = "/list_makanan";
-  
+  static const String detail_makanan = "/detail_makanan";
+  static const String main_menu = "/main_menu";
 
   static final myPages = [
     GetPage(name: registration, page: () => RegistrationPage()),
     GetPage(name: confirm_registration, page: () => ConfirmRegPage()),
     GetPage(name: list_makanan, page: () => ListMakananPage()),
+    GetPage(name: detail_makanan, page: () => DetailMakananPage()),
+    GetPage(name: main_menu, page: () => MainMenuPage()),
   ];
 }

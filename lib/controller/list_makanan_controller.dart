@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
-import '../model/makan_model.dart';
+import '../model/makan_model.dart'; 
 
 class ListMakananController extends GetxController {
-  List<MakananModel> listMakanan = [
+  RxList<MakananModel> listMakanan = <MakananModel>[
     MakananModel(
       namaMakanan: "Soto Ayam",
       hargaMakanan: "10.000",
@@ -13,7 +13,7 @@ class ListMakananController extends GetxController {
     ),
     MakananModel(
       namaMakanan: "Jenang Kudus",
-      hargaMakanan: "35.000",
+      hargaMakanan: "80.000",
       gambar: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500",
       infoMakanan: "Oleh-oleh khas Kudus dengan tekstur kenyal dan rasa manis gurih.",
       rating: 4.7,
@@ -28,20 +28,20 @@ class ListMakananController extends GetxController {
       review: "Dagingnya empuk banget.",
     ),
     MakananModel(
-      namaMakanan: "Nasi Goreng",
+      namaMakanan: "Nasi Goreng Spesial",
       hargaMakanan: "15.000",
       gambar: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500",
-      infoMakanan: "Nasi goreng spesial dengan telur dan kerupuk.",
+      infoMakanan: "Nasi goreng spesial.",
       rating: 4.7,
       review: "Bumbunya meresap sempurna.",
     ),
     MakananModel(
-      namaMakanan: "Sate Thaichan",
-      hargaMakanan: "25.000",
+      namaMakanan: "Sate taichan",
+      hargaMakanan: "5.000",
       gambar: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500",
       infoMakanan: "Sate ayam bumbu kacang gurih manis dengan lontong.",
       rating: 4.6,
       review: "Bumbu kacangnya mantap.",
     ),
-  ];
-}
+  ].obs;
+} 
